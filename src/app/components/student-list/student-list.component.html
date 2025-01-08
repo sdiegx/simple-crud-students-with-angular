@@ -1,7 +1,35 @@
 <h2>Lista de Estudiantes</h2>
-<ul>
-  <li *ngFor="let student of students">
-    {{ student.name }} - {{ student.email }}
-    <button (click)="deleteStudent(student.student_id)">Eliminar</button>
-  </li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Curso</th>
+      <th>Grupo</th>
+      <th>Materia</th>
+      <th>Email</th>
+      <th>Teléfono</th>
+      <th>Dirección</th>
+      <th>Lugar de Trabajo</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{ student.student_id }}</td>
+      <td>{{ student.name }}</td>
+      <td>{{ student.age }}</td>
+      <td>{{ student.course }}</td>
+      <td>{{ student.group }}</td>
+      <td>{{ student.subject }}</td>
+      <td>{{ student.email }}</td>
+      <td>{{ student.phone }}</td>
+      <td>{{ student.adress }}</td>
+      <td>{{ student.placeWork }}</td>
+      <td>
+        <button (click)="deleteStudent(student.student_id)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,10 +1,45 @@
 <h2>Agregar Estudiante</h2>
-<form (ngSubmit)="addStudent()">
+<form (ngSubmit)="addStudent()" class="form-container">
+  <input
+    type="text"
+    [(ngModel)]="student.student_id"
+    name="student_id"
+    placeholder="ID del Estudiante"
+    required
+  />
   <input
     type="text"
     [(ngModel)]="student.name"
     name="name"
     placeholder="Nombre"
+    required
+  />
+  <input
+    type="number"
+    [(ngModel)]="student.age"
+    name="age"
+    placeholder="Edad"
+    required
+  />
+  <input
+    type="number"
+    [(ngModel)]="student.course"
+    name="course"
+    placeholder="Curso"
+    required
+  />
+  <input
+    type="number"
+    [(ngModel)]="student.group"
+    name="group"
+    placeholder="Grupo"
+    required
+  />
+  <input
+    type="text"
+    [(ngModel)]="student.subject"
+    name="subject"
+    placeholder="Materia"
     required
   />
   <input
@@ -19,6 +54,21 @@
     [(ngModel)]="student.phone"
     name="phone"
     placeholder="Teléfono"
+    required
+  />
+  <input
+    type="text"
+    [(ngModel)]="student.adress"
+    name="adress"
+    placeholder="Dirección"
+    required
+  />
+  <input
+    type="text"
+    [(ngModel)]="student.placeWork"
+    name="placeWork"
+    placeholder="Lugar de Trabajo"
+    required
   />
   <button type="submit">Guardar</button>
 </form>
