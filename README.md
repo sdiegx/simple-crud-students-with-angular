@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FrontedStudents
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+# simple-crud-students-with-angular
+Aplicación web con angular para hacer el crud de datos de estudiantes haciendo solicitudes apirest a un servidor.
+>>>>>>> c48008409056ffc7d256e42eadff91142d888e38
