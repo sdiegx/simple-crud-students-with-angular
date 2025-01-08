@@ -1,1 +1,24 @@
-<p>student-form works!</p>
+<h2>Agregar Estudiante</h2>
+<form (ngSubmit)="addStudent()">
+  <input
+    type="text"
+    [(ngModel)]="student.name"
+    name="name"
+    placeholder="Nombre"
+    required
+  />
+  <input
+    type="email"
+    [(ngModel)]="student.email"
+    name="email"
+    placeholder="Email"
+    required
+  />
+  <input
+    type="text"
+    [(ngModel)]="student.phone"
+    name="phone"
+    placeholder="Teléfono"
+  />
+  <button type="submit">Guardar</button>
+</form>
